@@ -5,7 +5,7 @@ var Movies = React.createClass({
 
   render: function() {
     var movies = this.props.movies.map(function(movie) {
-        return React.createElement(Movies, {movies: title, key: movies.id});
+        return React.createElement(Movie, {movie: movie, key: movie.id});
     });
 
     return (
