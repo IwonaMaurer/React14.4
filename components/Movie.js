@@ -7,9 +7,9 @@
     render: function() {
       return (
         React.createElement('div', {},
-          React.createElement('h1', {}, 'Tytuł' + this.props.title),
-          React.createElement('p', {}, 'Opis' + this.props.desc),
-          React.createElement('img', {src: this.props.src})
+          React.createElement('h1', {}, 'Tytuł: ' + this.props.movie.title),
+          React.createElement('p', {}, 'Opis: ' + this.props.movie.desc),
+          React.createElement('img', {src: this.props.movie.src})
         )
       )
     },
